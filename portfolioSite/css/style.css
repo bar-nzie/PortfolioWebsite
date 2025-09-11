@@ -204,3 +204,139 @@ body {
     border-color: #a4161a;
     box-shadow: 0 0 16px 4px #ff4d4d, 0 2px 12px rgba(164, 22, 26, 0.4); /* red glow */
 }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem; /* spacing between projects */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-item {
+  background: #a4161a;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* stack */
+  }
+}
+
+.featured-projects-title {
+    background-color: #501111;
+    text-align: center;
+    border-radius: 5rem;
+    margin: 3% 3%;
+}
+
+.projects-container a {
+    display: inline-block; /* behave like a button */
+    color: #fff;
+    background: #a4161a; /* red button background */
+    text-decoration: none;
+    padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 2vw, 2rem);
+    margin: clamp(0.5rem, 1vw, 1rem) auto;
+    border-radius: 1rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 2px 0px rgba(255, 255, 255, 0.4);
+    transition:
+        background 0.3s,
+        color 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projects-container a:hover {
+    background: #fff;
+    color: #111;
+    border-color: #a4161a;
+    box-shadow: 0 0 16px 4px #ff4d4d, 0 2px 12px rgba(164, 22, 26, 0.4); /* red glow */
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: 12% auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #501111;
+  border-radius: 2rem;
+  border: 2px solid black;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.contact-section h1,
+.contact-section h2,
+.contact-section p {
+  margin: 1rem 0;
+}
+
+/* Make links look like buttons */
+/* Refined button styles */
+.contact-section a {
+  display: inline-flex; /* flex so icon + text align */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+  background: #a4161a;
+  text-decoration: none;
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 2vw, 2rem);
+  margin: clamp(0.5rem, 1vw, 1rem) 0.5rem;
+  border-radius: 1rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 2px 0px rgba(255, 255, 255, 0.4);
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s;
+  cursor: pointer;
+}
+
+.contact-section a img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+}
+
+
+.contact-section a:hover {
+  background: #fff;
+  color: #111;
+  border-color: #a4161a;
+  box-shadow: 0 0 16px 4px #ff4d4d, 0 2px 12px rgba(164, 22, 26, 0.4);
+}
+
+.credits {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ccc;
+    margin: 2rem 0;
+}
