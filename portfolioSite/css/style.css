@@ -72,6 +72,13 @@ body {
     margin-top: 10%;
 }
 
+.intro-title {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    color: #f5f6fa;
+    padding-top: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .intro-row {
     display: flex;
     align-items: center;
@@ -101,6 +108,25 @@ body {
     box-shadow: 1px 4px 200px rgba(0, 0, 0, 0.2);
 }
 
+/*  Mobile layout */
+@media (max-width: 700px) {
+    .intro-row {
+        flex-direction: column;      /* stack instead of side by side */
+        align-items: center;         /* center items horizontally */
+        text-align: center;          /* center text */
+    }
+
+    .profile-pic {
+        width: 40%;                  /* bigger image for mobile */
+        margin: 1rem 0;              /* spacing around image */
+    }
+
+    .intro-text {
+        margin: 1rem 0;              /* spacing below image */
+        width: 90%;                  /* keep text block readable */
+    }
+}
+
 .skills-list {
   max-width: 800px;
   margin: 2rem auto;
@@ -110,25 +136,41 @@ body {
 .skills-list ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 1rem; /* space between items */
+  gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .skills-list li {
-  background-color: #a4161a;
+  display: flex; /* puts icon + text side by side */
+  align-items: center; /* vertically align icon & text */
+  gap: 0.75rem; /* space between icon and text */
   color: white;
   font-size: clamp(0.9rem, 1vw, 1.2rem);
-  text-align: center;
-  padding: 5%;
-  margin: 0% 5%;
+  padding: 0.8rem 1rem;
   border-radius: 0.5rem;
-  border: black 2px solid;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
 }
+
+.skills-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skills-list img {
+  width: clamp(20px, 2.5vw, 40px); /* responsive size */
+  height: auto;
+  flex-shrink: 0; /* prevents squishing */
+}
+
+.skills-list li span {
+  flex: 1;                 /* fill remaining space */
+  text-align: center;       /* center the label text */
+}
+
 /* Mobile view — single column */
 @media (max-width: 600px) {
   .skills-list ul {
