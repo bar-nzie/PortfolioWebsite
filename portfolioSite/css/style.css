@@ -121,6 +121,11 @@ body {
         margin: 1rem 0;              /* spacing around image */
     }
 
+    .ProjectVideo {
+        min-width: 60%;                  /* bigger image for mobile */
+        margin: 0 0;              /* spacing around image */
+    }
+
     .intro-text {
         margin: 1rem 0;              /* spacing below image */
         width: 90%;                  /* keep text block readable */
@@ -339,4 +344,23 @@ body {
     font-size: 0.8rem;
     color: #ccc;
     margin: 2rem 0;
+}
+
+.ProjectLayout {
+    justify-content: center;
+    background-color: #501111;
+    text-align: center;
+    border-radius: 5rem;
+    margin: 3% 3%;
+    margin-top: 10%;
+}
+
+.ProjectVideo {
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+    margin: 5% 10%;
+    object-fit: cover;
+    border: black 5px solid;
+    box-shadow: 1px 4px 200px rgba(0, 0, 0, 0.2);
 }
