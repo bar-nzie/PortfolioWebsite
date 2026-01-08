@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html class="gameContainer">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
         <title>BarnzieDEV</title>
     </head>
-    <body>
+    <body class="gameContainer">
         <header>
             <nav class="nav-links">
                 <a href="/index.html">HOME</a>
@@ -17,6 +17,13 @@
         </header>
 
         <canvas id="c"></canvas>
+        <div id="mobile-controls">
+            <button id="left-btn">⬅️</button>
+            <button id="right-btn">➡️</button>
+            <button id="up-btn">⬆️</button>
+            <button id="down-btn">⬇️</button>
+            <button id="jump-btn">⏫</button>
+        </div>
         <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js">    </script>
 
         <script type="importmap">  {    "imports": {      "three": 
