@@ -190,16 +190,16 @@ function main()
         }
     }
     for (let i=0; i <= 50; i++) {
-        const tree = new Scenery({x: (Math.random()- 0.5) * 100, y: 0, z: (Math.random() * 20)- 45 }, '/Assets/Tree.glb')
+        const tree = new Scenery({x: (Math.random()- 0.5) * 100, y: 0, z: (Math.random() * 20)- 45 }, 'Assets/Tree.glb')
     }
     for (let i=0; i <= 50; i++) {
-        const tree = new Scenery({x: (Math.random()- 0.5) * 100, y: 0, z: (Math.random() * -20)+ 45 }, '/Assets/Tree.glb')
+        const tree = new Scenery({x: (Math.random()- 0.5) * 100, y: 0, z: (Math.random() * -20)+ 45 }, 'Assets/Tree.glb')
     }
     for (let i=0; i <= 50; i++) {
-        const tree = new Scenery({x: (Math.random() * -20)+ 45, y: 0, z: (Math.random()- 0.5) * 100 }, '/Assets/Tree.glb')
+        const tree = new Scenery({x: (Math.random() * -20)+ 45, y: 0, z: (Math.random()- 0.5) * 100 }, 'Assets/Tree.glb')
     }
     for (let i=0; i <= 50; i++) {
-        const tree = new Scenery({x: (Math.random() * 20)- 45, y: 0, z: (Math.random()- 0.5) * 100 }, '/Assets/Tree.glb')
+        const tree = new Scenery({x: (Math.random() * 20)- 45, y: 0, z: (Math.random()- 0.5) * 100 }, 'Assets/Tree.glb')
     }
 
 
